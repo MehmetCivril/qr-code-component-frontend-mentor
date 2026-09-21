@@ -1,0 +1,66 @@
+@layer global {
+  :root {
+    --color-slate-900: rgb(31, 49, 79);
+    --color-slate-500: rgb(104, 119, 141);
+    --color-slate-300: rgb(213, 225, 239);
+    --color-white: rgb(255, 255, 255);
+
+    --text-preset-1: bold 22px/1.2 "Outfit", sans-serif;
+    --text-preset-2: 15px/1.4 "Outfit", sans-serif;
+
+    --letter-spacing-0: 0px;
+    --letter-spacing-02: 0.2px;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--color-slate-300);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+main {
+  background-color: var(--color-white);
+  margin-bottom: 20px;
+  width: min(320px, calc(100% - 40px));
+  border-radius: 20px;
+  padding: 16px 16px 40px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.qr-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 16px;
+  gap: 16px;
+
+  h1 {
+    font: var(--text-preset-1);
+    color: var(--color-slate-900);
+  }
+
+  p {
+    font: var(--text-preset-2);
+    color: var(--color-slate-500);
+  }
+}
